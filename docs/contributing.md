@@ -1,94 +1,94 @@
-## Contributing
+## 기여하기
 
-This project is under active development and the code will likely change pretty significantly.
+이 프로젝트는 활발히 개발 중이며 코드가 크게 변경될 수 있습니다.
 
-**At the moment, we only plan to prioritize reviewing external contributions for bugs or security fixes.**
+**현재는 외부 기여 중 버그 또는 보안 수정에 대한 검토를 우선시할 계획입니다.**
 
-If you want to add a new feature or change the behavior of an existing one, please open an issue proposing the feature and get approval from an OpenAI team member before spending time building it.
+새 기능을 추가하거나 기존 동작을 바꾸고 싶다면 먼저 이슈를 열어 제안하고, 작업에 시간을 들이기 전에 OpenAI 팀원의 승인을 받으세요.
 
-**New contributions that don't go through this process may be closed** if they aren't aligned with our current roadmap or conflict with other priorities/upcoming features.
+이 절차를 거치지 않은 **새로운 기여는 현재 로드맵과 맞지 않거나 다른 우선순위/향후 기능과 충돌할 경우 닫힐 수 있습니다.**
 
-### Development workflow
+### 개발 워크플로
 
-- Create a _topic branch_ from `main` - e.g. `feat/interactive-prompt`.
-- Keep your changes focused. Multiple unrelated fixes should be opened as separate PRs.
-- Following the [development setup](#development-workflow) instructions above, ensure your change is free of lint warnings and test failures.
+- `main`에서 _토픽 브랜치_를 만드세요. 예: `feat/interactive-prompt`.
+- 변경 사항은 집중된 단위로 유지하세요. 관련 없는 수정이 여러 개라면 각각 별도의 PR로 올려야 합니다.
+- [개발 환경 설정](#기여하기) 지침에 따라 린트 경고나 테스트 실패가 없도록 확인하세요.
 
-### Writing high-impact code changes
+### 영향력 있는 코드 변경 작성하기
 
-1. **Start with an issue.** Open a new one or comment on an existing discussion so we can agree on the solution before code is written.
-2. **Add or update tests.** Every new feature or bug-fix should come with test coverage that fails before your change and passes afterwards. 100% coverage is not required, but aim for meaningful assertions.
-3. **Document behaviour.** If your change affects user-facing behaviour, update the README, inline help (`codex --help`), or relevant example projects.
-4. **Keep commits atomic.** Each commit should compile and the tests should pass. This makes reviews and potential rollbacks easier.
+1. **이슈로 시작하세요.** 새 이슈를 열거나 기존 논의에 댓글을 남겨, 코드를 작성하기 전에 해결 방안에 합의합니다.
+2. **테스트를 추가하거나 업데이트하세요.** 새로운 기능이나 버그 수정은 변경 전에는 실패하고 변경 후에는 성공하는 테스트 커버리지를 포함해야 합니다. 100% 커버리지는 필수는 아니지만 의미 있는 검증을 목표로 하세요.
+3. **동작을 문서화하세요.** 사용자에게 보이는 동작이 바뀐다면 README, 인라인 도움말(`codex --help`), 관련 예제 프로젝트를 업데이트하세요.
+4. **커밋을 원자적으로 유지하세요.** 각 커밋은 컴파일되고 테스트가 통과해야 합니다. 이렇게 하면 리뷰와 롤백이 쉬워집니다.
 
-### Opening a pull request
+### Pull Request 열기
 
-- Fill in the PR template (or include similar information) - **What? Why? How?**
-- Run **all** checks locally (`cargo test && cargo clippy --tests && cargo fmt -- --config imports_granularity=Item`). CI failures that could have been caught locally slow down the process.
-- Make sure your branch is up-to-date with `main` and that you have resolved merge conflicts.
-- Mark the PR as **Ready for review** only when you believe it is in a merge-able state.
+- PR 템플릿을 채우거나 동일한 정보를 포함하세요. **무엇을, 왜, 어떻게** 변경했는지 알려주세요.
+- 로컬에서 **모든** 검사를 실행하세요(`cargo test && cargo clippy --tests && cargo fmt -- --config imports_granularity=Item`). 로컬에서 발견 가능한 CI 실패는 전체 일정을 지연시킵니다.
+- 브랜치를 `main`과 동기화하고 머지 충돌을 해결했는지 확인하세요.
+- 병합할 준비가 되었다고 판단될 때에만 PR 상태를 **Ready for review**로 표시하세요.
 
-### Review process
+### 리뷰 프로세스
 
-1. One maintainer will be assigned as a primary reviewer.
-2. If your PR adds a new feature that was not previously discussed and approved, we may choose to close your PR (see [Contributing](#contributing)).
-3. We may ask for changes - please do not take this personally. We value the work, but we also value consistency and long-term maintainability.
-5. When there is consensus that the PR meets the bar, a maintainer will squash-and-merge.
+1. 한 명의 메인테이너가 기본 리뷰어로 지정됩니다.
+2. 사전에 논의/승인되지 않은 새 기능을 PR에 추가한 경우 PR을 닫을 수 있습니다(위 [기여하기](#기여하기) 참고).
+3. 변경을 요청할 수도 있습니다. 개인적으로 받아들이지 마세요. 우리는 기여를 소중히 여기지만, 일관성과 장기 유지보수성도 중요합니다.
+4. PR이 기준을 충족한다고 모두가 동의하면 메인테이너가 squash-and-merge를 진행합니다.
 
-### Community values
+### 커뮤니티 가치
 
-- **Be kind and inclusive.** Treat others with respect; we follow the [Contributor Covenant](https://www.contributor-covenant.org/).
-- **Assume good intent.** Written communication is hard - err on the side of generosity.
-- **Teach & learn.** If you spot something confusing, open an issue or PR with improvements.
+- **친절과 포용.** 서로를 존중하며 대하고 [Contributor Covenant](https://www.contributor-covenant.org/)를 따릅니다.
+- **선한 의도를 가정.** 글로 하는 소통은 어렵습니다. 상대에게 관대하게 해석하세요.
+- **배움과 공유.** 헷갈리는 부분을 발견했다면 개선을 위한 이슈나 PR을 열어주세요.
 
-### Getting help
+### 도움받기
 
-If you run into problems setting up the project, would like feedback on an idea, or just want to say _hi_ - please open a Discussion or jump into the relevant issue. We are happy to help.
+프로젝트 설정에 문제가 생겼거나 아이디어에 대한 피드백이 필요하거나 단순히 _인사_하고 싶다면 Discussion을 열거나 관련 이슈에 참여하세요. 기꺼이 도와드리겠습니다.
 
-Together we can make Codex CLI an incredible tool. **Happy hacking!** :rocket:
+함께 Codex CLI를 놀라운 도구로 만들어 봅시다. **즐거운 해킹!** :rocket:
 
-### Contributor license agreement (CLA)
+### 기여자 라이선스 계약(CLA)
 
-All contributors **must** accept the CLA. The process is lightweight:
+모든 기여자는 CLA를 **반드시** 수락해야 합니다. 절차는 간단합니다.
 
-1. Open your pull request.
-2. Paste the following comment (or reply `recheck` if you've signed before):
+1. Pull Request를 엽니다.
+2. 아래 댓글을 붙여넣습니다(이미 서명한 적이 있다면 `recheck`로 답장).
 
    ```text
    I have read the CLA Document and I hereby sign the CLA
    ```
 
-3. The CLA-Assistant bot records your signature in the repo and marks the status check as passed.
+3. CLA-Assistant 봇이 리포지터리에 서명을 기록하고 상태 검사를 통과로 표시합니다.
 
-No special Git commands, email attachments, or commit footers required.
+특별한 Git 명령, 이메일 첨부, 커밋 푸터는 필요 없습니다.
 
-#### Quick fixes
+#### 빠른 수정
 
-| Scenario          | Command                                          |
-| ----------------- | ------------------------------------------------ |
-| Amend last commit | `git commit --amend -s --no-edit && git push -f` |
+| 시나리오 | 명령 |
+| --- | --- |
+| 마지막 커밋 수정 | `git commit --amend -s --no-edit && git push -f` |
 
-The **DCO check** blocks merges until every commit in the PR carries the footer (with squash this is just the one).
+**DCO 검사**는 PR의 모든 커밋에 푸터가 포함될 때까지 병합을 차단합니다(squash를 사용하면 최신 커밋 하나만 확인하면 됩니다).
 
-### Releasing `codex`
+### `codex` 릴리스하기
 
-_For admins only._
+_관리자 전용._
 
-Make sure you are on `main` and have no local changes. Then run:
+`main` 브랜치에 있고 로컬 변경이 없는지 확인한 후 아래를 실행하세요.
 
 ```shell
-VERSION=0.2.0  # Can also be 0.2.0-alpha.1 or any valid Rust version.
+VERSION=0.2.0  # 0.2.0-alpha.1 등 유효한 Rust 버전이면 됩니다.
 ./codex-rs/scripts/create_github_release.sh "$VERSION"
 ```
 
-This will make a local commit on top of `main` with `version` set to `$VERSION` in `codex-rs/Cargo.toml` (note that on `main`, we leave the version as `version = "0.0.0"`).
+이 스크립트는 `codex-rs/Cargo.toml`의 `version`을 `$VERSION`으로 설정한 커밋을 `main` 위에 생성합니다(`main`에서는 `version = "0.0.0"`으로 유지합니다).
 
-This will push the commit using the tag `rust-v${VERSION}`, which in turn kicks off [the release workflow](../.github/workflows/rust-release.yml). This will create a new GitHub Release named `$VERSION`.
+그리고 `rust-v${VERSION}` 태그로 커밋을 푸시해 [릴리스 워크플로](../.github/workflows/rust-release.yml)를 실행합니다. 이 워크플로는 이름이 `$VERSION`인 새 GitHub Release를 생성합니다.
 
-If everything looks good in the generated GitHub Release, uncheck the **pre-release** box so it is the latest release.
+생성된 GitHub Release가 모두 정상이라면 **pre-release** 체크박스를 해제해 최신 릴리스로 표시하세요.
 
-Create a PR to update [`Formula/c/codex.rb`](https://github.com/Homebrew/homebrew-core/blob/main/Formula/c/codex.rb) on Homebrew.
+Homebrew에서 [`Formula/c/codex.rb`](https://github.com/Homebrew/homebrew-core/blob/main/Formula/c/codex.rb)를 업데이트하는 PR을 생성합니다.
 
-### Security & responsible AI
+### 보안 및 책임 있는 AI
 
-Have you discovered a vulnerability or have concerns about model output? Please e-mail **security@openai.com** and we will respond promptly. 
+취약점을 발견했거나 모델 출력에 대한 우려가 있다면 **security@openai.com**으로 이메일을 보내주세요. 신속히 답변드리겠습니다.

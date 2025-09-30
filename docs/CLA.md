@@ -1,44 +1,36 @@
-# Individual Contributor License Agreement (v1.0, OpenAI)
+# 개인 기여자 라이선스 계약서 (v1.0, OpenAI)
 
-_Based on the Apache Software Foundation Individual CLA v 2.2._
+_Apache Software Foundation Individual CLA v2.2를 기반으로 작성되었습니다._
 
-By commenting **“I have read the CLA Document and I hereby sign the CLA”**
-on a Pull Request, **you (“Contributor”) agree to the following terms** for any
-past and future “Contributions” submitted to the **OpenAI Codex CLI project
-(the “Project”)**.
+Pull Request에 **“I have read the CLA Document and I hereby sign the CLA”**라고
+댓글을 남기면, **귀하(“기여자”)는 OpenAI Codex CLI 프로젝트(“프로젝트”)에 제출한 과거 및
+미래의 모든 “기여물”에 대해 아래 약관에 동의**하는 것으로 간주됩니다.
 
 ---
 
-## 1. Definitions
-- **“Contribution”** – any original work of authorship submitted to the Project
-  (code, documentation, designs, etc.).
-- **“You” / “Your”** – the individual (or legal entity) posting the acceptance
-  comment.
+## 1. 정의
+- **“기여물(Contribution)”** – 프로젝트에 제출된 모든 독창적인 저작물(코드, 문서, 디자인 등).
+- **“귀하(You)” / “귀하의(Your)”** – 위 수락 댓글을 게시하는 개인(또는 법인).
 
-## 2. Copyright License  
-You grant **OpenAI, Inc.** and all recipients of software distributed by the
-Project a perpetual, worldwide, non‑exclusive, royalty‑free, irrevocable
-license to reproduce, prepare derivative works of, publicly display, publicly
-perform, sublicense, and distribute Your Contributions and derivative works.
+## 2. 저작권 라이선스
+귀하는 **OpenAI, Inc.** 및 프로젝트에서 배포하는 소프트웨어의 모든 수령인에게 귀하의 기여물과 그 파생물을 복제,
+2차 저작물 작성, 공개 전시, 공개 공연, 서브라이선스, 배포할 수 있는 영구적이고 전 세계적이며 비독점적이고
+로열티가 없으며 철회할 수 없는 라이선스를 부여합니다.
 
-## 3. Patent License  
-You grant **OpenAI, Inc.** and all recipients of the Project a perpetual,
-worldwide, non‑exclusive, royalty‑free, irrevocable (except as below) patent
-license to make, have made, use, sell, offer to sell, import, and otherwise
-transfer Your Contributions alone or in combination with the Project.
+## 3. 특허 라이선스
+귀하는 **OpenAI, Inc.** 및 프로젝트의 모든 수령인에게 귀하의 기여물을 프로젝트와 단독으로 또는 결합하여 제작,
+제조 의뢰, 사용, 판매, 판매 제안, 수입 및 기타 방식으로 이전할 수 있는 영구적이고 전 세계적이며 비독점적이고
+로열티가 없으며(아래의 경우를 제외하고) 철회할 수 없는 특허 라이선스를 부여합니다.
 
-If any entity brings patent litigation alleging that the Project or a
-Contribution infringes a patent, the patent licenses granted by You to that
-entity under this CLA terminate.
+어떠한 단체든 프로젝트 또는 기여물이 특허를 침해한다고 주장하며 특허 소송을 제기할 경우, 귀하가 해당 단체에
+부여한 본 CLA상의 특허 라이선스는 종료됩니다.
 
-## 4. Representations
-1. You are legally entitled to grant the licenses above.  
-2. Each Contribution is either Your original creation or You have authority to
-   submit it under this CLA.  
-3. Your Contributions are provided **“AS IS”** without warranties of any kind.  
-4. You will notify the Project if any statement above becomes inaccurate.
+## 4. 진술
+1. 귀하는 위 라이선스를 부여할 법적 권한이 있습니다.
+2. 각 기여물은 귀하가 직접 창작했거나 이 CLA에 따라 제출할 권한이 있습니다.
+3. 귀하의 기여물은 모든 종류의 보증 없이 **“있는 그대로(AS IS)”** 제공됩니다.
+4. 위 진술이 부정확해지는 경우 프로젝트에 이를 알릴 것입니다.
 
-## 5. Miscellany  
-This Agreement is governed by the laws of the **State of California**, USA,
-excluding its conflict‑of‑laws rules. If any provision is held unenforceable,
-the remaining provisions remain in force.
+## 5. 기타 조항
+본 계약은 미국 **캘리포니아주** 법률(법률 충돌 규칙 제외)에 따릅니다. 어떤 조항이 집행 불가능하다고 판단되더라도
+나머지 조항은 계속 유효합니다.

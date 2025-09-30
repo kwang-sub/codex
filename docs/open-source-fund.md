@@ -1,8 +1,8 @@
-## Codex open source fund
+## Codex 오픈소스 펀드
 
-We're excited to launch a **$1 million initiative** supporting open source projects that use Codex CLI and other OpenAI models.
+Codex CLI와 OpenAI 모델을 활용하는 오픈소스 프로젝트를 지원하기 위해 **100만 달러 규모의 프로그램**을 시작했습니다.
 
-- Grants are awarded up to **$25,000** API credits.
-- Applications are reviewed **on a rolling basis**.
+- 최대 **$25,000 상당의 API 크레딧**을 지원합니다.
+- **상시 접수**로 신청서를 검토합니다.
 
-**Interested? [Apply here](https://openai.com/form/codex-open-source-fund/).** 
+**관심 있으신가요? [여기에서 신청하세요](https://openai.com/form/codex-open-source-fund/).**

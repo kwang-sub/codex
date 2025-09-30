@@ -1,20 +1,20 @@
-## Custom Prompts
+## 사용자 지정 프롬프트
 
-Save frequently used prompts as Markdown files and reuse them quickly from the slash menu.
+자주 쓰는 프롬프트를 Markdown 파일로 저장하고 슬래시 메뉴에서 빠르게 다시 사용할 수 있습니다.
 
-- Location: Put files in `$CODEX_HOME/prompts/` (defaults to `~/.codex/prompts/`).
-- File type: Only Markdown files with the `.md` extension are recognized.
-- Name: The filename without the `.md` extension becomes the slash entry. For a file named `my-prompt.md`, type `/my-prompt`.
-- Content: The file contents are sent as your message when you select the item in the slash popup and press Enter.
-- Arguments: Local prompts support placeholders in their content:
-  - `$1..$9` expand to the first nine positional arguments typed after the slash name
-  - `$ARGUMENTS` expands to all arguments joined by a single space
-  - `$$` is preserved literally
-  - Quoted args: Wrap a single argument in double quotes to include spaces, e.g. `/review "docs/My File.md"`.
-- How to use:
-  - Start a new session (Codex loads custom prompts on session start).
-  - In the composer, type `/` to open the slash popup and begin typing your prompt name.
-  - Use Up/Down to select it. Press Enter to submit its contents, or Tab to autocomplete the name.
-- Notes:
-  - Files with names that collide with built‑in commands (e.g. `/init`) are ignored and won’t appear.
-  - New or changed files are discovered on session start. If you add a new prompt while Codex is running, start a new session to pick it up.
+- 위치: 파일을 `$CODEX_HOME/prompts/`에 두세요(기본값은 `~/.codex/prompts/`).
+- 파일 형식: `.md` 확장자를 가진 Markdown 파일만 인식합니다.
+- 이름: `.md`를 제외한 파일명이 슬래시 명령 이름이 됩니다. 예: `my-prompt.md` → `/my-prompt` 입력.
+- 내용: 슬래시 팝업에서 항목을 선택하고 Enter를 누르면 파일 내용이 메시지로 전송됩니다.
+- 인자: 로컬 프롬프트 본문에는 다음과 같은 자리 표시자를 사용할 수 있습니다.
+  - `$1..$9`는 슬래시 명령 뒤에 입력한 첫 9개의 위치 인자로 확장됩니다.
+  - `$ARGUMENTS`는 모든 인자를 공백 하나로 이어 붙인 문자열로 확장됩니다.
+  - `$$`는 문자 그대로 유지됩니다.
+  - 인자에 공백을 포함하려면 큰따옴표로 감싸세요. 예: `/review "docs/My File.md"`.
+- 사용 방법:
+  - 새 세션을 시작합니다(Codex는 세션 시작 시 사용자 지정 프롬프트를 불러옵니다).
+  - 작성 창에서 `/`를 눌러 슬래시 팝업을 열고 프롬프트 이름을 입력하기 시작합니다.
+  - 위/아래 화살표로 선택합니다. Enter를 누르면 내용이 전송되고, Tab을 누르면 이름이 자동 완성됩니다.
+- 참고:
+  - 기본 명령과 이름이 충돌하는 파일(예: `/init`)은 무시되며 표시되지 않습니다.
+  - 새 파일이나 수정된 파일은 세션을 시작할 때 감지합니다. Codex 실행 중에 프롬프트를 추가했다면 새 세션을 시작하세요.

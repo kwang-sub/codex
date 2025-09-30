@@ -1,40 +1,40 @@
-## Install & build
+## 설치 및 빌드
 
-### System requirements
+### 시스템 요구 사항
 
-| Requirement                 | Details                                                         |
-| --------------------------- | --------------------------------------------------------------- |
-| Operating systems           | macOS 12+, Ubuntu 20.04+/Debian 10+, or Windows 11 **via WSL2** |
-| Git (optional, recommended) | 2.23+ for built-in PR helpers                                   |
-| RAM                         | 4-GB minimum (8-GB recommended)                                 |
+| 항목 | 세부 정보 |
+| --- | --- |
+| 운영체제 | macOS 12+, Ubuntu 20.04+/Debian 10+, 또는 Windows 11(WSL2를 통해) |
+| Git(선택이지만 권장) | PR 도우미 내장 기능을 위해 2.23+ |
+| RAM | 최소 4GB(권장 8GB) |
 
 ### DotSlash
 
-The GitHub Release also contains a [DotSlash](https://dotslash-cli.com/) file for the Codex CLI named `codex`. Using a DotSlash file makes it possible to make a lightweight commit to source control to ensure all contributors use the same version of an executable, regardless of what platform they use for development.
+GitHub Release에는 `codex`라는 이름의 [DotSlash](https://dotslash-cli.com/) 파일도 포함되어 있습니다. DotSlash 파일을 사용하면 개발 플랫폼과 관계없이 모든 기여자가 동일한 실행 파일 버전을 사용하도록 소스 제어에 가벼운 커밋을 남길 수 있습니다.
 
-### Build from source
+### 소스에서 빌드하기
 
 ```bash
-# Clone the repository and navigate to the root of the Cargo workspace.
+# 리포지터리를 클론하고 Cargo 워크스페이스 루트로 이동합니다.
 git clone https://github.com/openai/codex.git
 cd codex/codex-rs
 
-# Install the Rust toolchain, if necessary.
+# Rust 툴체인이 없다면 설치합니다.
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 rustup component add rustfmt
 rustup component add clippy
 
-# Build Codex.
+# Codex 빌드
 cargo build
 
-# Launch the TUI with a sample prompt.
+# 샘플 프롬프트로 TUI 실행
 cargo run --bin codex -- "explain this codebase to me"
 
-# After making changes, ensure the code is clean.
+# 변경 후 코드를 정리합니다.
 cargo fmt -- --config imports_granularity=Item
 cargo clippy --tests
 
-# Run the tests.
+# 테스트 실행
 cargo test
-``` 
+```
